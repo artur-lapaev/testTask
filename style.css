@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header, .main, .footer {display: flex;justify-content: center;}
+.main {flex-grow:  1; padding: 10px 5% 10px 5%}
+.header, .footer {height: 100px;}
+.header__caption {
+    display: flex;
+    justify-content: inherit;
+    width: 100%;    
+    background-color: azure;    
+}
+.main__user-profile {
+    display: flex;
+    padding: 5px;
+    background-color: brown;
+    width: 100%;    
+}
+.user-profile__data, .user-profile__photo { flex-grow: 1;}
+.data__text-underline{text-decoration: underline};
+.footer {
+    padding: 5px 0 5px 0;
+}
+.user-profile__name::before {
+    content: 'Имя: ';
+}
+.user-profile__surname::before {
+    content: 'Отчество: ';
+}
+.user-profile__lastname::before {
+    content: 'Фамилия: ';
+}
+.user-profile__position::before {
+    content: 'Должность: ';
+}
+.user-profile__job::before {
+    content: 'Место работы: ';
+}
+.user-profile__education::before {
+    content: 'Образование: ';
+}
